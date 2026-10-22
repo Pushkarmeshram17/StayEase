@@ -1,0 +1,148 @@
+.hotel-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hotel-image-container {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.hotel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+
+.hotel-card:hover .hotel-image {
+  transform: scale(1.04);
+}
+
+.hotel-rating {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  background: #ffffff;
+  color: #1f4e5f;
+
+  padding: 6px 10px;
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.hotel-card-content {
+  padding: 20px;
+}
+
+.hotel-location {
+  margin: 0 0 7px;
+
+  color: #718096;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.hotel-name {
+  margin: 0 0 10px;
+
+  color: #1f2933;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.hotel-description {
+  margin: 0;
+
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.6;
+
+  min-height: 45px;
+}
+
+.hotel-card-bottom {
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+}
+
+.hotel-price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.hotel-price strong {
+  color: #1f4e5f;
+  font-size: 20px;
+}
+
+.hotel-price span {
+  color: #718096;
+  font-size: 12px;
+}
+
+.hotel-details-btn {
+  text-decoration: none;
+
+  background: #1f4e5f;
+  color: #ffffff;
+
+  padding: 10px 15px;
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: background 0.2s ease;
+}
+
+.hotel-details-btn:hover {
+  background: #163b48;
+}
+
+@media (max-width: 550px) {
+  .hotel-image-container {
+    height: 200px;
+  }
+
+  .hotel-card-content {
+    padding: 16px;
+  }
+
+  .hotel-name {
+    font-size: 19px;
+  }
+
+  .hotel-card-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hotel-details-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

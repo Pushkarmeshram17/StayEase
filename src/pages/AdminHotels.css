@@ -1,0 +1,505 @@
+.admin-hotels-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 55px 24px 100px;
+}
+
+.admin-hotels-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.admin-hotels-label {
+  margin: 0 0 8px;
+  color: #1f4e5f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.admin-hotels-header h1 {
+  margin: 0 0 8px;
+  color: #1f2933;
+  font-size: 38px;
+}
+
+.admin-hotels-header > div > p:last-child {
+  margin: 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.admin-back-btn {
+  padding: 10px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  color: #374151;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.admin-back-btn:hover {
+  background: #f8fafc;
+}
+
+/* Toolbar */
+
+.admin-hotels-toolbar {
+  display: grid;
+  grid-template-columns: 1fr 160px 160px auto;
+  gap: 10px;
+  margin-bottom: 17px;
+}
+
+.admin-hotel-search input,
+.admin-hotels-toolbar select {
+  width: 100%;
+  height: 43px;
+  padding: 0 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #374151;
+  font-size: 12px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.admin-hotel-search input:focus,
+.admin-hotels-toolbar select:focus {
+  border-color: #1f4e5f;
+}
+
+.admin-add-hotel-btn {
+  height: 43px;
+  padding: 0 17px;
+  border: none;
+  border-radius: 8px;
+  background: #1f4e5f;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.admin-add-hotel-btn:hover {
+  background: #163b48;
+}
+
+.admin-hotel-result-info {
+  margin-bottom: 17px;
+  color: #718096;
+  font-size: 11px;
+}
+
+.admin-hotel-result-info strong {
+  color: #374151;
+}
+
+/* Hotel cards */
+
+.admin-hotel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-hotel-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.035);
+}
+
+.admin-hotel-image {
+  min-height: 190px;
+}
+
+.admin-hotel-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-hotel-information {
+  min-width: 0;
+  padding: 20px 22px;
+}
+
+.admin-hotel-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #edf0f2;
+}
+
+.admin-hotel-location {
+  margin: 0 0 5px;
+  color: #718096;
+  font-size: 10px;
+}
+
+.admin-hotel-main h2 {
+  margin: 0;
+  color: #1f2933;
+  font-size: 20px;
+}
+
+.admin-hotel-status {
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.admin-hotel-status.active {
+  background: #edf6f1;
+  color: #26734d;
+}
+
+.admin-hotel-status.inactive {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.admin-hotel-details {
+  display: flex;
+  gap: 50px;
+  padding: 17px 0;
+}
+
+.admin-hotel-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.admin-hotel-details span {
+  color: #718096;
+  font-size: 9px;
+}
+
+.admin-hotel-details strong {
+  color: #374151;
+  font-size: 12px;
+}
+
+.admin-hotel-actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-top: 14px;
+  border-top: 1px solid #edf0f2;
+}
+
+.admin-hotel-actions a,
+.admin-hotel-actions button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.admin-view-hotel {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.admin-edit-hotel {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #1f4e5f;
+}
+
+.admin-delete-hotel {
+  border: 1px solid #f0b5b0;
+  background: #ffffff;
+  color: #b42318;
+}
+
+.admin-edit-hotel:hover {
+  background: #f8fafc;
+}
+
+.admin-delete-hotel:hover {
+  background: #fff5f4;
+}
+
+/* Empty state */
+
+.admin-no-hotels {
+  padding: 70px 20px;
+  background: #f8fafc;
+  border: 1px dashed #d1d5db;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.admin-no-hotels h2 {
+  margin: 0 0 7px;
+  color: #1f2933;
+  font-size: 20px;
+}
+
+.admin-no-hotels p {
+  margin: 0 0 18px;
+  color: #718096;
+  font-size: 12px;
+}
+
+.admin-no-hotels button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 7px;
+  background: #1f4e5f;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Modal */
+
+.admin-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.45);
+}
+
+.admin-hotel-modal {
+  width: 100%;
+  max-width: 650px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 13px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.admin-modal-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.admin-modal-heading p {
+  margin: 0 0 5px;
+  color: #1f4e5f;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.admin-modal-heading h2 {
+  margin: 0;
+  color: #1f2933;
+  font-size: 22px;
+}
+
+.admin-modal-heading > button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 6px;
+  background: #f3f4f6;
+  color: #374151;
+  font-size: 21px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.admin-modal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 15px;
+}
+
+.admin-modal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 16px;
+}
+
+.admin-modal-field label {
+  color: #374151;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.admin-modal-field input,
+.admin-modal-field select {
+  width: 100%;
+  height: 43px;
+  padding: 0 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #374151;
+  font-size: 12px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.admin-modal-field input:focus,
+.admin-modal-field select:focus {
+  border-color: #1f4e5f;
+}
+
+.admin-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 7px;
+  padding-top: 18px;
+  border-top: 1px solid #edf0f2;
+}
+
+.admin-modal-actions button {
+  padding: 10px 17px;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-modal-cancel {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+}
+
+.admin-modal-submit {
+  border: none;
+  background: #1f4e5f;
+  color: #ffffff;
+}
+
+.admin-modal-submit:hover {
+  background: #163b48;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .admin-hotels-toolbar {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .admin-add-hotel-btn {
+    width: 100%;
+  }
+
+  .admin-hotel-card {
+    grid-template-columns: 180px 1fr;
+  }
+
+  .admin-hotel-details {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .admin-hotels-page {
+    padding: 45px 16px 70px;
+  }
+
+  .admin-hotels-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-hotels-header h1 {
+    font-size: 31px;
+  }
+
+  .admin-back-btn {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .admin-hotels-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-hotel-card {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-hotel-image {
+    height: 210px;
+    min-height: 0;
+  }
+
+  .admin-hotel-information {
+    padding: 18px;
+  }
+
+  .admin-hotel-main {
+    flex-direction: column;
+  }
+
+  .admin-hotel-details {
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .admin-hotel-actions {
+    flex-wrap: wrap;
+  }
+
+  .admin-modal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .admin-hotel-details {
+    flex-direction: column;
+  }
+
+  .admin-hotel-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-hotel-actions a,
+  .admin-hotel-actions button {
+    text-align: center;
+  }
+
+  .admin-hotel-modal {
+    padding: 22px 18px;
+  }
+
+  .admin-modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .admin-modal-actions button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,179 @@
+.hotels-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 24px 100px;
+}
+
+.hotels-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.hotels-label {
+  margin-bottom: 10px;
+
+  color: #1f4e5f;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hotels-heading h1 {
+  margin: 0 0 12px;
+
+  color: #1f2933;
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.hotels-heading > p:last-child {
+  margin: 0;
+
+  color: #718096;
+  font-size: 16px;
+}
+
+.hotel-filters {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+
+  gap: 14px;
+
+  padding: 20px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  margin-bottom: 30px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.filter-group label {
+  color: #374151;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  height: 43px;
+
+  padding: 0 12px;
+
+  background: #ffffff;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  color: #374151;
+  font-size: 13px;
+
+  outline: none;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+  border-color: #1f4e5f;
+}
+
+.hotel-results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.hotel-results-header p {
+  margin: 0;
+
+  color: #718096;
+  font-size: 14px;
+}
+
+.hotel-results-header strong {
+  color: #1f2933;
+}
+
+.hotel-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+.no-hotels {
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  border: 1px dashed #d1d5db;
+  border-radius: 14px;
+
+  background: #f8fafc;
+}
+
+.no-hotels h2 {
+  margin-bottom: 8px;
+
+  color: #1f2933;
+}
+
+.no-hotels p {
+  margin: 0;
+
+  color: #718096;
+}
+
+@media (max-width: 1000px) {
+  .hotel-filters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-group {
+    grid-column: span 2;
+  }
+
+  .hotel-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .hotels-page {
+    padding: 50px 16px 70px;
+  }
+
+  .hotels-heading h1 {
+    font-size: 32px;
+  }
+
+  .hotel-filters {
+    grid-template-columns: 1fr;
+
+    padding: 16px;
+  }
+
+  .search-group {
+    grid-column: auto;
+  }
+
+  .hotel-grid {
+    grid-template-columns: 1fr;
+  }
+}

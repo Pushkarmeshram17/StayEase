@@ -1,0 +1,40 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logo-mark {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #1f4e5f;
+  border-radius: 12px 12px 12px 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 23px;
+  font-weight: 700;
+  color: #1f4e5f;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-name {
+  font-size: 21px;
+  font-weight: 700;
+  color: #1f2933;
+  letter-spacing: -0.5px;
+}
+
+.logo-tagline {
+  font-size: 7px;
+  letter-spacing: 1.5px;
+  color: #718096;
+  margin-top: 2px;
+}
